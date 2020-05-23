@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7B555951"
+    android:padding="16dp"
+    tools:context=".controller">
+
+    <TextView
+        android:id="@+id/status4"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="98dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/skb1"
+        android:text="S4 "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/status3"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="144dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/skb1"
+        android:text="S3 "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="191dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/rounded_edittext"
+        android:onClick="ShowPairedDevices"
+        android:text="connect"
+        android:textStyle="bold|italic" />
+
+    <SeekBar
+        android:id="@+id/skb4"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="108dp"
+        android:layout_marginStart="5dp"
+        android:max="180"
+        android:progress="50"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="170dp"
+        android:clickable="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="50dp"
+        android:clickable="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="110dp"
+        android:clickable="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="220dp"
+        android:layout_marginEnd="110dp"
+        android:clickable="true" />
+
+    <SeekBar
+        android:id="@+id/skb1"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="241dp"
+        android:layout_marginStart="5dp"
+        android:max="180"
+        android:progress="100"
+        />
+
+    <SeekBar
+        android:id="@+id/skb2"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="194dp"
+        android:layout_marginStart="5dp"
+        android:max="180"
+        android:progress="40"
+      />
+
+    <SeekBar
+        android:id="@+id/skb3"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="152dp"
+        android:layout_marginStart="5dp"
+        android:max="180"
+        android:progress="80"
+         />
+
+    <ListView
+        android:id="@+id/pairedList"
+        android:layout_width="161dp"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="245dp">
+
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/serv"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="503dp"
+        android:text="Servo Control"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/botcntrl"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:text="Bot Control"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/status1"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="232dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/skb1"
+        android:text="S1 "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/status2"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="183dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/skb1"
+        android:text="S2 "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="170dp"
+        android:layout_marginEnd="300dp"
+        android:text="Not Connected" />
+
+    <TextView
+        android:id="@+id/datacheck"
+        android:layout_width="127dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="281dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>
