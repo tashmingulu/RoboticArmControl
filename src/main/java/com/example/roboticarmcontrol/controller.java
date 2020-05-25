@@ -58,7 +58,7 @@ public class controller extends AppCompatActivity {
     {
 
         Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
-        String deviceName[]=new String[pairedDevices.size()];
+        String[] deviceName =new String[pairedDevices.size()];
         btArray=new BluetoothDevice[pairedDevices.size()];
         //jump to activity1
 
@@ -76,7 +76,7 @@ public class controller extends AppCompatActivity {
                 //String deviceHardwareAddress = device.getAddress(); // MAC address
             }
             ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,deviceName);
-            ListView listView = (ListView) findViewById(R.id.pairedList);
+            ListView listView = findViewById(R.id.pairedList);
             listView.setAdapter(arrayAdapter);
         }
 
@@ -153,9 +153,9 @@ public class controller extends AppCompatActivity {
     });
     private void findViewByIds()
     {
-        connect=(Button) findViewById(R.id.button);
-        status=(TextView) findViewById(R.id.status);
-        listView=(ListView) findViewById(R.id.pairedList);
+        connect= findViewById(R.id.button);
+        status= findViewById(R.id.status);
+        listView= findViewById(R.id.pairedList);
         fab1=findViewById(R.id.floatingActionButton1);
         fab2=findViewById(R.id.floatingActionButton2);
         fab3=findViewById(R.id.floatingActionButton3);
