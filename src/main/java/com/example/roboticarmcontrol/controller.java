@@ -117,7 +117,7 @@ public class controller extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         fullscreen();
         setContentView(R.layout.activity_controller);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
 
         if (!bluetoothAdapter.isEnabled())
         {
